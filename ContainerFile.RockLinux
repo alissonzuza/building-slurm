@@ -20,7 +20,7 @@ RUN dnf makecache \
 ARG PMIX_VER
 RUN wget https://github.com/openpmix/openpmix/releases/download/v$PMIX_VER/pmix-$PMIX_VER.tar.gz
 RUN tar -zxvf pmix-$PMIX_VER.tar.gz
-RUN  cd pmix-$PMIX_VER && ./configure --prefix=/usr/local && make && make install && ls -la /usr/local
+RUN  cd pmix-$PMIX_VER && ./configure --prefix=/usr/local && make && make install
 
 
 ## Compile Slurm with pmix
