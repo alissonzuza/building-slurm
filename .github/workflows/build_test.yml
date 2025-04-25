@@ -25,6 +25,7 @@ jobs:
           - name: Disable podman remove
             run: |
                 sudo sed -i 's/podman images/#podman images/g' ./slurm_build.sh
+                
           - name: Run shell script
             run: ./slurm_build.sh
   
@@ -36,7 +37,7 @@ jobs:
                     exit 1
                 else
                     echo "Packages found in ./rpmbuild/RPMS/x86_64"
-                    echo "Packages: in ./rpmbuild/RPMS/x86_64 $pkgs"" 
+                    echo "Packages: in ./rpmbuild/RPMS/x86_64 $pkgs" 
                 fi
 
 
