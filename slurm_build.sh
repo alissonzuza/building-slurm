@@ -5,7 +5,7 @@ SLURM_VER=23.02.7
 PMIX_VER='5.0.2'
 ROCK_VER='8.9'
 
-NAME="slurmpmix"
+NAME="building-slurm"
 DIR="$(pwd)/rpmbuild"
 
 ## Validate DIR
@@ -22,3 +22,6 @@ podman build -t ${NAME} \
        --build-arg SLURM_VER="${SLURM_VER}" \
        --build-arg PMIX_VER="${PMIX_VER}" \
        --build-arg ROCK_VER="${ROCK_VER}"  .
+
+## Delete image after build
+podman images -f reference=${NAME} --format "{{.ID}}" | xargs podman rmi -f
