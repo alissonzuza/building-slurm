@@ -1,0 +1,30 @@
+ARG ROCK_VER
+FROM rockylinux/rockylinux:$ROCK_VER
+
+# Install deps
+RUN dnf makecache \
+    && dnf --enablerepo=devel install hwloc-devel munge-devel -y \
+    && dnf install -y epel-release \
+    && dnf makecache  \
+    && dnf groupinstall -y "Development Tools" \
+    && dnf install -y mariadb-devel \
+	 pam-devel \
+	 readline-devel \
+	 munge-libs \
+	 wget \
+	 libevent \
+	 libevent-devel \
+	 python3 \
+	 perl
+
+## Install pmix
+ARG PMIX_VER
+RUN wget https://github.com/openpmix/openpmix/releases/download/v$PMIX_VER/pmix-$PMIX_VER.tar.gz
+RUN tar -zxvf pmix-$PMIX_VER.tar.gz
+RUN  cd pmix-$PMIX_VER && ./configure --prefix=/usr/local && make && make install && ls -la /usr/local
+
+
+## Compile Slurm with pmix
+ARG SLURM_VER
+RUN wget https://download.schedmd.com/slurm/slurm-$SLURM_VER.tar.bz2
+RUN rpmbuild --define '_with_pmix --with-pmix=/usr/local' -ta slurm-$SLURM_VER.tar.bz2
