@@ -21,7 +21,7 @@ This project aims to facilitate the build of slurm to have pmix support by defau
 In some cases it is necessary that specific versions of pmix be included in the slurm package for support in the HPC cluster.
 
 ***Attention***  
-***All packages used from slurm and pmix are distributed in their original form without modification, coming from the repositories of their creators.***
+***All packages used from slurm and pmix are distributed in their original form without modification, coming from the repositories of their creators.***  
 
 Therefore, we do not modify any package and both remain originally as they were created, we are only compiling to generate standard support in the slurm package.
 
