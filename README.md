@@ -1,6 +1,4 @@
 
-## Appendix
-
 # PT-BR  
 Este projeto inicial foi configurado e testado somente em Rocky Linux 8.9 e iremos efetuar melhorais para suportar em outros ambientes e  pacotes diferentes.
 Sempre adaptando conforme necessário o uso em cluster HPC
@@ -9,10 +7,10 @@ Sempre adaptando conforme necessário o uso em cluster HPC
 Esse projeto tem por intuito facilitar o build do slurm para ter suporte do pmix por padrão em seu pacote.
 Em alguns casos e necessario que versões especificas do pmix , sejam embutidas no pacote do slurm para suporte no cluster HPC.
 
-Atenção
-**Todos os pacotes usados do slurm e pmix , são distribuidos de forma original sem modificação, provenientes dos repositórios de seus criados.
+_Atenção_  
+***Todos os pacotes usados do slurm e pmix , são distribuidos de forma original sem modificação, provenientes dos repositórios de seus criados.
 Sendo assim não modificamos nenhum pacote e ambos se mantem originalmente como foram feitos, somente estamos compilando para gerar suporte padrão no pacote do slurm.
-**  
+***  
 
 # EN (Google Translator)
 This initial project was configured and tested only on Rocky Linux 8.9 and we will make improvements to support other environments and different packages.
