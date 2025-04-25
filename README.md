@@ -5,7 +5,7 @@ Sempre adaptando conforme necessário o uso em cluster HPC
 
 ```bash
 Container Manager: Podman
-Image: Rock Linux 8.9
+Imagem: Rock Linux 8.9
 PMIX: Origem do repositório  do criador
 SLURM: Origem do repositório do criador 
 ```
