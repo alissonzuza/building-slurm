@@ -1,7 +1,15 @@
 
-# PT-BR  
+## PT-BR  
 Este projeto inicial foi configurado e testado somente em Rocky Linux 8.9 e iremos efetuar melhorais para suportar em outros ambientes e  pacotes diferentes.
 Sempre adaptando conforme necessário o uso em cluster HPC
+
+```bash
+Container: Podman
+S.O: Rock Linux 8.9
+PMIX: Origem do repositório  do criador
+SLURM: Origem do repositório odo criador 
+```
+
 
 # Construindo Slurm
 Esse projeto tem por intuito facilitar o build do slurm para ter suporte do pmix por padrão em seu pacote.
@@ -11,9 +19,16 @@ Em alguns casos e necessario que versões especificas do pmix , sejam embutidas 
 ***Todos os pacotes usados do slurm e pmix , são distribuidos de forma original sem modificação, provenientes dos repositórios de seus criados.
 Sendo assim não modificamos nenhum pacote e ambos se mantem originalmente como foram feitos, somente estamos compilando para gerar suporte padrão no pacote do slurm.***  
 
-# EN (Google Translator)
+## EN (Google Translator)
 This initial project was configured and tested only on Rocky Linux 8.9 and we will make improvements to support other environments and different packages.
 Always adapting as necessary for use in HPC clusters.
+
+```bash
+Container: Podman
+OS: Rock Linux 8.9
+PMIX: Creator's repository source
+SLURM: Creator's repository source
+```
 
 # Building Slurm
 
@@ -45,6 +60,7 @@ These variables must be set within the slurm_build.sh script to correctly downlo
 ## Deployment
 
 To deploy this project run
+
 
 ```bash
   git clone https://github.com/alissonzuza/building-slurm.git   
