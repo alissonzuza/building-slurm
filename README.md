@@ -44,10 +44,10 @@ Therefore, we do not modify any package and both remain originally as they were 
 ## Environment Variables
 
 PT-BR  
-Essas variaveis devem ser configuradas dentro do script slurm_build.sh para baixar corretamente o slurm e o pmix que vai ser compilado
+Essas variaveis devem ser configuradas dentro do script `slurm_build.sh` para baixar corretamente o slurm e o pmix que vai ser compilado
 
 EN  
-These variables must be set within the slurm_build.sh script to correctly download slurm and the pmix that will be compiled.
+These variables must be set within the `slurm_build.sh` script to correctly download slurm and the pmix that will be compiled.
 
 `SLURM_VER`
 
