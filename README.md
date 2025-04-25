@@ -2,7 +2,7 @@
 ## Appendix
 
 PT-BR
-Este projeto inicial foi configurado e testado somente em Rocky Linux 8.9 e iremos efetuarmos melhorais para suportar em outros ambientes e  pacotes diferentes.
+Este projeto inicial foi configurado e testado somente em Rocky Linux 8.9 e iremos efetuar melhorais para suportar em outros ambientes e  pacotes diferentes.
 Sempre adaptando conforme necessário o uso em cluster HPC
 
 EN
