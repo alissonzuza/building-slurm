@@ -22,9 +22,12 @@ jobs:
           - name: Set up shell script permissions
             run: chmod +x ./slurm_build.sh
  
+          - name: Disable podman remove
+            run: |
+                sudo sed -i 's/podman images/#podman images/g' ./slurm_build.sh
           - name: Run shell script
             run: ./slurm_build.sh
-
+  
           - name: Run validation compilation
             run: |
                 pkgs=$(ls -1 ./rpmbuild/RPMS/x86_64/slurm-* | wc -l)
