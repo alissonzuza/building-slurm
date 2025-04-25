@@ -9,8 +9,7 @@ Em alguns casos e necessario que versões especificas do pmix , sejam embutidas 
 
 _Atenção_  
 ***Todos os pacotes usados do slurm e pmix , são distribuidos de forma original sem modificação, provenientes dos repositórios de seus criados.
-Sendo assim não modificamos nenhum pacote e ambos se mantem originalmente como foram feitos, somente estamos compilando para gerar suporte padrão no pacote do slurm.
-***  
+Sendo assim não modificamos nenhum pacote e ambos se mantem originalmente como foram feitos, somente estamos compilando para gerar suporte padrão no pacote do slurm.***  
 
 # EN (Google Translator)
 This initial project was configured and tested only on Rocky Linux 8.9 and we will make improvements to support other environments and different packages.
