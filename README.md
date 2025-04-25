@@ -7,7 +7,7 @@ Sempre adaptando conforme necessário o uso em cluster HPC
 Container: Podman
 S.O: Rock Linux 8.9
 PMIX: Origem do repositório  do criador
-SLURM: Origem do repositório odo criador 
+SLURM: Origem do repositório do criador 
 ```
 
 
