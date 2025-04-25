@@ -4,8 +4,8 @@ Este projeto inicial foi configurado e testado somente em Rocky Linux 8.9 e irem
 Sempre adaptando conforme necessário o uso em cluster HPC
 
 ```bash
-Container: Podman
-S.O: Rock Linux 8.9
+Container Manager: Podman
+Image: Rock Linux 8.9
 PMIX: Origem do repositório  do criador
 SLURM: Origem do repositório do criador 
 ```
@@ -24,8 +24,8 @@ This initial project was configured and tested only on Rocky Linux 8.9 and we wi
 Always adapting as necessary for use in HPC clusters.
 
 ```bash
-Container: Podman
-OS: Rock Linux 8.9
+Container Manager: Podman
+Image: Rock Linux 8.9
 PMIX: Creator's repository source
 SLURM: Creator's repository source
 ```
