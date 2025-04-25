@@ -7,7 +7,7 @@ Sempre adaptando conforme necessário o uso em cluster HPC
 Esse projeto tem por intuito facilitar o build do slurm para ter suporte do pmix por padrão em seu pacote.
 Em alguns casos e necessario que versões especificas do pmix , sejam embutidas no pacote do slurm para suporte no cluster HPC.
 
-_Atenção_  
+***Atenção***  
 ***Todos os pacotes usados do slurm e pmix , são distribuidos de forma original sem modificação, provenientes dos repositórios de seus criados.
 Sendo assim não modificamos nenhum pacote e ambos se mantem originalmente como foram feitos, somente estamos compilando para gerar suporte padrão no pacote do slurm.***  
 
@@ -20,8 +20,8 @@ Always adapting as necessary for use in HPC clusters.
 This project aims to facilitate the build of slurm to have pmix support by default in its package.
 In some cases it is necessary that specific versions of pmix be included in the slurm package for support in the HPC cluster.
 
-Attention
-All packages used from slurm and pmix are distributed in their original form without modification, coming from the repositories of their creators.
+***Attention***  
+***All packages used from slurm and pmix are distributed in their original form without modification, coming from the repositories of their creators.***
 
 Therefore, we do not modify any package and both remain originally as they were created, we are only compiling to generate standard support in the slurm package.
 
